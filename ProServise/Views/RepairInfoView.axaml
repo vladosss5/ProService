@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:ProServise.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ProServise.Views.RepairInfoView"
+        x:DataType="viewModels:MainWindowViewModel"
+        x:Name="ThisWindow"
+        Title="RepairInfoView"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True">
+    
+        <Design.DataContext>
+                <viewModels:RepairInfoViewModel/>
+        </Design.DataContext>
+        
+        <Grid Margin="10">
+                <StackPanel Grid.Row="0" Grid.Column="0" Margin="5">
+                        <TextBlock Text="Данные об устройстве" Margin="5"
+                                   FontSize="30"/>
+                        <TextBox Watermark="Тип" Margin="5" 
+                                 Text="{Binding DeviceInfo.Type}"/>
+                        <TextBox Watermark="Производитель" Margin="5"
+                                 Text="{Binding DeviceInfo.Manufacturer}"/>
+                        <TextBox Watermark="Модель" Margin="5"
+                                 Text="{Binding DeviceInfo.Model}"/>
+                        <TextBox Watermark="Серийный номер" Margin="5"
+                                 Text="{Binding DeviceInfo.SerialNumber}"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="0" Grid.Column="1" Margin="5">
+                        <TextBlock Text="Данные о клиенте" Margin="5"
+                                   FontSize="30"/>
+                        <TextBox Watermark="Имя" Margin="5"
+                                 Text="{Binding ClientInfo.Fname}"/>
+                        <TextBox Watermark="Фамилия" Margin="5"
+                                 Text="{Binding ClientInfo.Sname}"/>
+                        <TextBox Watermark="Отчество" Margin="5"
+                                 Text="{Binding ClientInfo.Lname}"/>
+                        <TextBox Watermark="Номер телефона" Margin="5"
+                                 Text="{Binding ClientInfo.PhoneNumber}"/>
+                        <TextBox Watermark="E-Mail" Margin="5"
+                                 Text="{Binding ClientInfo.Email}"/>
+                        <TextBox Watermark="Адрес" Margin="5"
+                                 Text="{Binding ClientInfo.Address}"/>
+                </StackPanel>
+                
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+        </Grid>
+</Window>

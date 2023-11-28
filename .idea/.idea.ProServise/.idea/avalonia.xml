@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ProServise/App.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/AddUser.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/AddUserView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/AuthorizationView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/ChangePasswordView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/MainView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/MainWindow.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/MainWindowView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/NewRepairView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/ProfileView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/RepairInfoView.axaml" value="ProServise/ProServise.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

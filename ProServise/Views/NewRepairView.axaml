@@ -1,0 +1,72 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:ProServise.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="900"
+        x:Class="ProServise.Views.NewRepairView"
+        x:DataType="viewModels:NewRepairViewModel"
+        x:Name="ThisWindow"
+        x:CompileBindings="False"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True"
+        Title="NewRepairView">
+        
+        <Design.DataContext>
+                <viewModels:NewRepairViewModel/>
+        </Design.DataContext>
+        
+        <Grid Margin="10">
+                <StackPanel Grid.Row="0" Margin="5">
+                        <TextBlock Text="Данные об устройстве" Margin="5"
+                                   FontSize="30"/>
+                        <TextBox Watermark="Тип" Margin="5" 
+                                 Text="{Binding Type}"/>
+                        <TextBox Watermark="Производитель" Margin="5"
+                                 Text="{Binding Manufacturer}"/>
+                        <TextBox Watermark="Модель" Margin="5"
+                                 Text="{Binding Model}"/>
+                        <TextBox Watermark="Серийный номер" Margin="5"
+                                 Text="{Binding SerialNumber}"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="1" Margin="5">
+                        <TextBlock Text="Данные о клиенте" Margin="5"
+                                   FontSize="30"/>
+                        <TextBox Watermark="Имя" Margin="5"
+                                 Text="{Binding FName}"/>
+                        <TextBox Watermark="Фамилия" Margin="5"
+                                 Text="{Binding SName}"/>
+                        <TextBox Watermark="Отчество" Margin="5"
+                                 Text="{Binding LName}"/>
+                        <TextBox Watermark="Номер телефона" Margin="5"
+                                 Text="{Binding PhoneNumber}"/>
+                        <TextBox Watermark="E-Mail" Margin="5"
+                                 Text="{Binding EMail}"/>
+                        <TextBox Watermark="Адрес" Margin="5"
+                                 Text="{Binding Address}"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="2" Margin="5">
+                        <TextBox Watermark="Описание неисправности" Margin="5" Height="200"
+                                 Text="{Binding DescriptionBreaking}"/>
+                        <Button Content="Сохранить" 
+                                Margin="5" HorizontalAlignment="Center"
+                                Command="{Binding AddRepair}"
+                                CommandParameter="{Binding ElementName=ThisWindow}"/>
+                        
+                        <Button Content="Отмена" 
+                                Margin="5" HorizontalAlignment="Center"
+                                Command="{Binding Cancel}"
+                                CommandParameter="{Binding ElementName=ThisWindow}"/>
+                </StackPanel>
+                
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        
+                </Grid.RowDefinitions>
+        </Grid>
+</Window>

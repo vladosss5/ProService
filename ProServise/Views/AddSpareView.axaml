@@ -1,0 +1,39 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:ProServise.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ProServise.Views.AddSpareView"
+        x:DataType="viewModels:MainWindowViewModel"
+        x:Name="ThisWindow"
+        Title="AddSpareView"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True">
+    
+        <Design.DataContext>
+                <viewModels:AddSpareViewModel/>
+        </Design.DataContext>
+        
+        <StackPanel Margin="10">
+                <TextBlock Text="Добавить запчасть" Margin="5"
+                           FontSize="24" HorizontalAlignment="Left"/>
+                    
+                <TextBox Watermark="Название" Margin="5"
+                         Text="{Binding NameSpare}"/>
+                    
+                <TextBox Watermark="Закупочная цена" Margin="5"
+                         Text="{Binding PurchasePrice}"/>
+                    
+                <TextBox Watermark="Розничная цена" Margin="5"
+                         Text="{Binding RetailPrice}"/>
+                    
+                <TextBox Watermark="Розничная цена" Margin="5"
+                         Text="{Binding CountSpare}"/>
+                    
+                <Button Content="Добавить" 
+                        Margin="5" HorizontalAlignment="Center"
+                        Command="{Binding AddSpare}"/>
+        </StackPanel>
+</Window>

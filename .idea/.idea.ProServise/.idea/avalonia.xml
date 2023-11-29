@@ -4,8 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="ProServise/App.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/AddSpareView.axaml" value="ProServise/ProServise.csproj" />
         <entry key="ProServise/Views/AddUser.axaml" value="ProServise/ProServise.csproj" />
         <entry key="ProServise/Views/AddUserView.axaml" value="ProServise/ProServise.csproj" />
+        <entry key="ProServise/Views/AddWorkView.axaml" value="ProServise/ProServise.csproj" />
         <entry key="ProServise/Views/AuthorizationView.axaml" value="ProServise/ProServise.csproj" />
         <entry key="ProServise/Views/ChangePasswordView.axaml" value="ProServise/ProServise.csproj" />
         <entry key="ProServise/Views/MainView.axaml" value="ProServise/ProServise.csproj" />

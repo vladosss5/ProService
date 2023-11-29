@@ -20,7 +20,13 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/v/Documents/yчёба/КурсачКириллу2/ProServise/ProServise/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/v/Documents/yчёба/КурсачКириллу2/ProServise/ProServise/Views/AddSpareView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/v/Documents/yчёба/КурсачКириллу2/ProServise/ProServise/Views/AddUserView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/v/Documents/yчёба/КурсачКириллу2/ProServise/ProServise/Views/AddWorkView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/v/Documents/yчёба/КурсачКириллу2/ProServise/ProServise/Views/AuthorizationView.axaml]
